@@ -1,0 +1,9 @@
+# ignore cookbook to allow for librarian to rebuild
+/chef/cookbooks
+/chef/tmp
+
+# Mac OS files
+.DS_Store
+
+#vagrant
+.vagrant

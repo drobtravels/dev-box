@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+# check community.opscode.com to find cookbooks for desired packages
+# specify cookbook name, git repo, and version as below
+
+site 'http://community.opscode.com/api/v1'
+
+# cookbook 'chef-client'
+
+# cookbook 'apache2', '>= 1.0.0'
+
+cookbook 'rvm',
+ :git => 'https://github.com/fnichol/chef-rvm'
+
+cookbook 'postgresql',
+  :git => 'http://github.com/hw-cookbooks/postgresql'
+
+cookbook 'mongodb',
+  :git => 'http://github.com/edelight/chef-mongodb'
+
+# cookbook 'database',
+#   :git => 'https://github.com/opscode-cookbooks/database'
+
+cookbook 'yum',
+  :git => 'https://github.com/opscode-cookbooks/yum/',
+  :ref => 'v2.4.2'
+
+cookbook 'apt',
+  :git => 'https://github.com/opscode-cookbooks/apt'
+
